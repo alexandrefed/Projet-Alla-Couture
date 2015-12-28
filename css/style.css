@@ -1,5 +1,5 @@
 body {
-	background-image: url("../images/Image00001.jpg");
+	background-image: url("../images/Fond.jpg");
 	font-family: "Open Sans"
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 #wrapper {
-	background-image: url(../images/fond1.jpg);
+	background-image: url(../images/Image00001.jpg);
 	height: 600px;
 	background-size: cover;
 	text-align: center;
