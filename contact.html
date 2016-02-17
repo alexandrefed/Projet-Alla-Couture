@@ -43,9 +43,6 @@
         <li><a href="#">Les énénements auxquels j'ai participé</a></li>
       </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Suivez-moi <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -61,14 +58,7 @@
 </nav>
 
 
-<div id="wrapper">
-  <h1>Choisissez et créez</h1>
-  <h2>Pourquoi pas tout de suite?</h2>
-    
-    <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#orderform">
-      Une jupe sur mesure
-    </button>
-  </div>
+
 
   <!-- Modal -->
 <div class="modal fade" id="orderform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -110,34 +100,42 @@
 </div>
 
 <div class="spacer"></div>
-  <div class="container text-center">
-    <div class="raw">
-      <div class="col-sm-6 col-md-3 feature">
-        <img src="images/tissu.png" width="54">
-        <p>
-          Choisissez votre matière ainsi que la couleur.
-        </p>
-      </div>  
-      <div class="col-sm-6 col-md-3 feature">  
-        <img src="images/mannequin.png" width="54">
-        <p>
-          Choisissez votre modèle et renseignez vos mesures.
-        </p>
-      </div>
-      <div class="col-sm-6 col-md-3 feature">    
-        <img src="images/colis.png" width="54">
-        <p>
-          Je réalise votre vêtement et vous l'envoie par voie postale.
-        </p>
-      </div>
-      <div class="col-sm-6 col-md-3 feature"> 
-        <img src="images/maps.png" width="54">
-        <p>
-          Vous êtes près de Compiègne? Venez me rendre visite.
-        </p>
-      </div>
+ 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="spacer"></div>
+      <div id="map" style="width: 100%; height: 400px;"></div>
+
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+      <script type="text/javascript">
+        var myLatlng = new google.maps.LatLng(49.3990570,2.8046790);
+
+        var myOptions = {
+            zoom: 12,
+            center: myLatlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            styles: [{"featureType":"landscape","elementType":"all","stylers":[{"hue":"#FFBB00"},{"saturation":43.400000000000006},{"lightness":37.599999999999994},{"gamma":1}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"color":"#e4eed0"}]},{"featureType":"landscape.natural.landcover","elementType":"geometry.fill","stylers":[{"color":"#639c35"}]},{"featureType":"poi","elementType":"all","stylers":[{"hue":"#00FF6A"},{"saturation":-1.0989010989011234},{"lightness":11.200000000000017},{"gamma":1}]},{"featureType":"poi.medical","elementType":"geometry.fill","stylers":[{"color":"#fffad8"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"hue":"#FFC200"},{"saturation":-61.8},{"lightness":45.599999999999994},{"gamma":1}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#f8f79a"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#2b5d18"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":51.19999999999999},{"gamma":1}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#fcfcfc"}]},{"featureType":"road.local","elementType":"all","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":52},{"gamma":1}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"#f7f7f4"}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#e0e0e0"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#646464"}]},{"featureType":"transit.line","elementType":"geometry.fill","stylers":[{"color":"#f6e881"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#0078FF"},{"saturation":-13.200000000000003},{"lightness":2.4000000000000057},{"gamma":1}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#bbdcf1"}]}]
+        };
+
+        var map = new google.maps.Map(document.getElementById('map'), myOptions);
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: "You are here!"
+        });
+      </script>
     </div>
-  </div>
+    <div class="col-sm-6">
+      <div class="spacer"></div>
+      <h1>Contact</h1>
+      <p><i class="fa fa-map-marker"></i>  5 rue Georges Forest</p>
+      <p>  Compiègne</p>
+      <p><i class="fa fa-phone"></i>  09 52 67 15 59</p>
+    </div>
+  </div> 
+</div> 
 
 <div class="spacer"></div>
 
