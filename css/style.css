@@ -129,18 +129,14 @@ h2 {
 }
 
 .carousel-style {
-	height: 600px
+	height: 650px
 }
 
 .carousel-inner > .item > img {
-    margin: 2em auto;
+    margin: 0 auto;
     position: center;
+    height: 630px;
 
-}
-
-.carousel-mimage {
-	height: 100%
-	width: 100%;
 }
 
 .item {
