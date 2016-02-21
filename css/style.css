@@ -19,7 +19,7 @@ body {
 	right: 0;
   	left: 0;
   	bottom: 0;
-  	padding: 2rem;
+  	padding: 1rem;
 }
 
 #footer p {
@@ -159,7 +159,7 @@ h3 {
 
 .encadre {
 	border-radius: 15px;
-	background-color: rgb(163, 127, 66);
+	background-color: #a47c48;
 	background-position: center;
 	text-align: center;
 	width: 25em;
@@ -175,6 +175,7 @@ h3 {
 
 p {
 	color: #845422;
+	text-shadow: 1px 1px 3px white;
 }
 
 .btn-secondary { 

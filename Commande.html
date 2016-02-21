@@ -40,17 +40,17 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="mescreations.html">Mes créations</a></li>
-        <li><a href="fonctionnement.html">Mon Fonctionnement</a></li>
+        <li><a href="Commande.html">Commandez</a></li>
         <li><a href="histoire.html">Mon Histoire</a></li>
       </ul>
             <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Suivez-moi <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="facebook.com">
-            <i class="fa fa-facebook"></i> Facebook
-           </a></li>
-            <li><a href="#"><i class="fa fa-youtube"></i> Youtube</a></li>
+            <li><a href="https://www.facebook.com/Alla-Couture-1453870244866725/"><i class="fa fa-facebook"></i> Facebook
+            </a></li>
+            <li><a href="https://www.youtube.com/channel/UCygWmLumyoxolw1qdh2FrmA"><i class="fa fa-youtube"></i> Youtube
+            </a></li>
           </ul>
         </li>
       </ul>
@@ -66,49 +66,71 @@
     <h1>Comment réaliser vos envies?</h1>
    <div class="spacer"></div>
     <div class="row">
-      <div class="col-sm-12 col-md-4 feature">
+      <div class="col-sm-12 col-md-6 feature">
         <div class="container encadre">
         <img src="images/fonct/idea.png" width="54">
         <h2>
-          Un vêtement en tête mais vous ne savez pas si c'est réalisabe?
+          Un vêtement en tête et vous voulez des informations?
         </h2> 
         </div>
         <div class="spacer"></div>
         <p>
           Les jupes et les accessoires pouvant se commander directement, si vous avez autre chose en tête n'hésitez pas à me contacter, vous pouvez soit remplir ce formulaire, soit me contacter directement.
         </p> 
-        <button type="button" class="btn btn-primary btn-lg">Contact</button>
-      </div>  
-      <div class="col-sm-12 col-md-4 feature">
-      <div class="container encadre">  
-        <img src="images/fonct/skirt.png" width="54">
-        <h2>
-          Vous voulez vous faire expédier une jupe sur mesure? 
-        </h2>
-        </div>
-        <div class="spacer"></div>
-        <p>
-          Je vous laisse regarder cette vidéo et compléter ce formulaire!
-        </p>
-        <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
-        <button type="button" class="btn btn-primary btn-lg">Primary</button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#orderform">
+      Contact
+    </button>
+        <!-- Modal -->
+      <div class="modal fade" id="orderform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Demande de renseignements</h4>
+            </div>
+            <div class="modal-body">
+              <div id="wufoo-s1ocjorh12m4unn">
+              Fill out my <a href="https://allacouture.wufoo.com/forms/s1ocjorh12m4unn">online form</a>.
+              </div>
+              <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">There are tons of <a href="http://www.wufoo.com/features/">Wufoo features</a> to help make your forms awesome.</div>
+              <script type="text/javascript">var s1ocjorh12m4unn;(function(d, t) {
+              var s = d.createElement(t), options = {
+              'userName':'allacouture',
+              'formHash':'s1ocjorh12m4unn',
+              'autoResize':true,
+              'height':'825',
+              'async':true,
+              'host':'wufoo.com',
+              'header':'show',
+              'ssl':true};
+              s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+              s.onload = s.onreadystatechange = function() {
+              var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+              try { s1ocjorh12m4unn = new WufooForm();s1ocjorh12m4unn.initialize(options);s1ocjorh12m4unn.display(); } catch (e) {}};
+              var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+              })(document, 'script');</script>
 
+
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-warning">Save changes</button>
+            </div> -->
+    
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
       </div>
-      <div class="col-sm-12 col-md-4 feature">
-      <div class="container encadre">    
-        <img src="images/fonct/scarf.png" width="54">
+
+      <div class="col-sm-12 col-md-6 feature">
+        
+        <img src="images/tissus.png" width="100">
         <h2>
-          Vous êtes intéressé par un accessoire : châle, étole ... ? 
+          Vous pouvez voir plusieurs tissus sur ma page Facebook 
         </h2>
-        </div>
+     
         <div class="spacer"></div>
-        <p>
-          Je vous laisse consulter cette page pour que vous ayez une idée de ce que je fais en cette matière, et vous pouvez remplir ce formulaire.
-        </p>
-      </div>
-      
-    </div>
-  
+         
 
 
   
@@ -117,16 +139,17 @@
 
 
 <div class="spacer"></div>
+<div class="spacer"></div>
 
 
- <div id="footer">
+<div id="footer">
   <div class="container">
     <div class="row">
 
-      <div class="col-xs-4 col-md-3">
+      <div class="col-xs-4 col-md-2">
         <ul class="list-inline social">
           <li>
-           <a href="facebook.com">
+           <a href="https://www.facebook.com/Alla-Couture-1453870244866725/">
             <i class="fa fa-facebook"></i> Facebook
            </a>
           </li>
@@ -134,11 +157,15 @@
       </div>
       
       <div class="col-xs-4 col-md-5">
-        <p>
-          Passionnée de couture, j'ai ouvert mon atelier à Compiègne.
-        </p>
+        <a href="mentionl">
+            Mentions légales
+        </a>
+     
+        <a href="mentionl">
+            Conditions Générales de Vente
+        </a>
       </div>
-      <div class="col-xs-4 col-md-4">
+      <div class="col-xs-4 col-md-5">
         <!-- Begin MailChimp Signup Form -->
         
         <div id="mc_embed_signup">
@@ -147,7 +174,7 @@
           
           <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="Votre adresse mail" required>
 
-          <input type="submit" value="S'inscrire" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+          <input type="submit" value="S'inscrire à la newsletter" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
 
           </div>
         </form>
